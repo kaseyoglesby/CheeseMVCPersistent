@@ -96,7 +96,7 @@ namespace CheeseMVC.Controllers
                     context.CheeseMenus.Add(newCheeseMenu);
                     context.SaveChanges();
 
-                    Redirect("/Menu/ViewMenu/" + newCheeseMenu.MenuID);
+                    return Redirect("/Menu/ViewMenu/" + newCheeseMenu.MenuID);
 
                 }
             }

@@ -1,6 +1,10 @@
 @model CheeseMVC.ViewModels.ViewMenuViewModel
 
-<h2>Index</h2>
+@{
+    ViewBag.Title = "MENU NAME";
+}
+
+<h2>Menu</h2>
 
 <ul>
     @foreach (var cheeseMenu in Model.Items)
